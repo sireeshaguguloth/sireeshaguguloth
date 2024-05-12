@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head><title>Adding new property</title></head>
+<body>
+<script>
+    
+    let emp={ 'id':1,'age':22,}
+    //Adding new property
+    emp['full name'] = 'G sireesha' 
+    emp['gender']='female' 
+    console.log(emp)//{id: 1, age: 22, full name: 'G sireesha', gender: 'female'}
+    //try to add dupllicate key
+    emp['full name'] = 'M anitha' 
+    //if we add duplicate key old key replaced by new key
+    console.log(emp) //{id: 1, age: 22, full name: 'M anitha', gender: 'female'}
+    delete emp.gender
+    console.log(emp) //{id: 1, age: 22, full name: 'M anitha'}
+</script>
+</body>
+</html>

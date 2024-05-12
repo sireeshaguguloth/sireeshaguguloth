@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head><title>Function inside object</title></head>
+<body>
+<script></script>
+</body>
+</html
+let person={ id          :1,
+               age         :22,
+               name        :'sireesha',
+               hobbies     :['singing','swimming','playing criket'],
+               phoneNumbers:[8367673522,3964352789],
+               wish        : function(){
+                                return "Good Evening";
+                              },
+               eating      :function(item){
+                             return `${this.name} Love to eat ${item}`
+                            }
+            }
+              //How to call method inside a object
+              console.log(person.wish());
+              console.log(person.eating('biryani'));
+
+>

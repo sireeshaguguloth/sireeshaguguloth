@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head><title>Object</title></head>
+<body>
+<script>
+    let emp={ 'id':1,'age':22,}
+    if('id' in emp){
+        console.log('key is already exist')
+    }else{
+        emp.id=101
+    }
+    console.log(emp);//key is already exist
+    
+    let student={ 'id':1,'age':22,}
+    if('city' in emp){
+        console.log('key is already exist')
+    }else{
+        student.city='hyd'
+    }
+    console.log(student);//{id: 1, age: 22, city: 'hyd'}
+
+
+</script>
+</body>
+</html>
